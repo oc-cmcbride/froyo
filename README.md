@@ -3,8 +3,20 @@ Repo contains the interpreter and example programs for the FROYO programming lan
 
 FroYo is a double-half-deque-and-stack language that is modeled after a classic frozen yogurt machine with vanilla, chocolate, and vanilla/chocolate swirl. Data is put into each flavor deque and is then scooped or poured out to the serving cone stack. 
 
+See the `Graphics` folder for graphics explaining some of the commands. 
+
 Instructions are separated by a new line. 
+
 Lines beginning with "#" are treated as comments. 
+
+## Using the Interpreter
+The interpreter `froyo.py` can both read in .froyo files and can provide a REPL via the console. Launch the FroYo interpreter with any Python interpreter with version 3.6 or above (for f-strings).
+
+To lanuch the interpreter in file-read mode, provide a file name as an additional argument. 
+- Example: `python3 froyo.py \PATH\TO\helloworld.froyo`
+
+To launch the interpreter in REPL mode, simply do not provide any additional arguments. 
+- Example: `python3 froyo.py`
 
 ## Grammar
 ```
