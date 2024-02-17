@@ -1,0 +1,27 @@
+CLOCKIN
+# Load user input prompts
+REFILL VANILLA "Enter character:"
+REFILL CHOCOLATE "Enter number of times to repeat:"
+
+# Get user input
+HOWMUCH VANILLA X SCOOP VANILLA
+SERVE
+ORDER VANILLA
+HOWMUCH CHOCOLATE X SCOOP CHOCOLATE
+SERVE
+ORDER VANILLA
+
+# At this point, Vanilla has [char, num]
+
+# Repeat character 
+SCOOP VANILLA X HOLD POUR VANILLA
+
+# Tell if user input more than one character
+SPILL VANILLA
+HOWMUCH VANILLA ? REFILL CHOCOLATE "More than 1 char input. Only printing first. "
+
+# Output result
+REFILL CHOCOLATE "Result: "
+HOWMUCH CHOCOLATE X SCOOP CHOCOLATE
+SERVE
+CLOCKOUT
